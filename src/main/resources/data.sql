@@ -125,3 +125,9 @@ INSERT INTO consultation_tickets(id,description,creation_date, user_id, consulta
 INSERT INTO consultation_tickets(id,description,creation_date, user_id, consultation_id) VALUES (6, 'Try to give him some tuna to check if he eats that.', '2023-04-11 15:20', 15, 3);
 INSERT INTO consultation_tickets(id,description,creation_date, user_id, consultation_id) VALUES (7, 'My lovebird doesn''t sing as my neighbour''s one.', '2023-02-24 12:30', 5, 4);
 INSERT INTO consultation_tickets(id,description,creation_date, user_id, consultation_id) VALUES (8, 'Lovebirds do not sing.', '2023-02-24 18:30', 16, 4);
+
+INSERT INTO grooming_package(id, description, cost) VALUES (1, 'Hair cut + Nails', 50);
+INSERT INTO grooming_package(id, description, cost) VALUES (2, 'Bath + Legs massage', 30);
+
+INSERT INTO coupon(id, start, finish, grooming_package_id) VALUES (1, '2023-01-05', '2023-02-21', 1);
+INSERT INTO coupon(id, start, finish, grooming_package_id) VALUES (2, '2022-12-20', '2023-01-31', 2);
