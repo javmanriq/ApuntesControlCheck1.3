@@ -9,6 +9,8 @@ import org.springframework.samples.petclinic.visit.Visit;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
@@ -29,11 +31,11 @@ public class Coupon extends BaseEntity {
     LocalDate expiryDate;
     
     @NotNull
-    @Transient
+    @ManyToOne
     GroomingPackage groomingPackage;    
 
     @NotNull
-    @Transient
+    @ManyToMany
     List<Visit> consumed;
 }
 

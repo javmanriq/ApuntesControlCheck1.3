@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.samples.petclinic.model.BaseEntity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
@@ -26,6 +27,6 @@ public class GroomingPackage extends BaseEntity {
     String description;
 
     @NotEmpty
-    @Transient
+    @ManyToMany
     List<GroomingType> contents;
 }
