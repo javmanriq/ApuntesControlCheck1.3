@@ -131,3 +131,12 @@ INSERT INTO grooming_package(id, description, cost) VALUES (2, 'Bath + Legs mass
 
 INSERT INTO coupon(id, start, finish, grooming_package_id) VALUES (1, '2023-01-05', '2023-02-21', 1);
 INSERT INTO coupon(id, start, finish, grooming_package_id) VALUES (2, '2022-12-20', '2023-01-31', 2);
+
+INSERT INTO grooming_package_contents(contents_id, grooming_package_id) VALUES (1, 1);
+INSERT INTO grooming_package_contents(contents_id, grooming_package_id) VALUES (2, 1);
+INSERT INTO grooming_package_contents(contents_id, grooming_package_id) VALUES (3, 2);
+INSERT INTO grooming_package_contents(contents_id, grooming_package_id) VALUES (5, 2);
+
+INSERT INTO coupon_consumed(consumed_id, coupon_id) VALUES (1,1);
+INSERT INTO coupon_consumed(consumed_id, coupon_id) VALUES (2,2);
+INSERT INTO coupon_consumed(consumed_id, coupon_id) VALUES (3,2);
