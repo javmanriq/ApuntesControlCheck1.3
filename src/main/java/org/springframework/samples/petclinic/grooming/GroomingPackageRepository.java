@@ -5,8 +5,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 
-public interface GroomingPackageRepository  {
+public interface GroomingPackageRepository extends CrudRepository<GroomingPackage, Integer> {
     public GroomingPackage save(GroomingPackage o);
     public List<GroomingPackage> findAll();
     public Optional<GroomingPackage> findById(Integer id);
